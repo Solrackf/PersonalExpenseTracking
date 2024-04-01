@@ -30,6 +30,17 @@ Bienvenido a Control de Finanzas, una aplicación web diseñada para ayudarte a 
 
 Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor, envía un pull request explicando los cambios propuestos.
 
+### Tipos de Commit
+
+- **feat**: Se utiliza cuando se añade una nueva característica al proyecto.
+- **fix**: Se utiliza para correcciones de errores.
+- **docs**: Se utiliza para cambios o adiciones en la documentación.
+- **style**: Se utiliza para cambios que no afectan la lógica del código (por ejemplo, cambios de formato).
+- **refactor**: Se utiliza para modificaciones que no corrigen errores ni añaden nuevas características, pero mejoran la estructura del código.
+- **test**: Se utiliza para añadir o modificar pruebas.
+- **chore**: Se utiliza para tareas de mantenimiento del proyecto o tareas generales.
+
+
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
