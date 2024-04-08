@@ -1,10 +1,17 @@
+import styled from 'styled-components';
 import './App.css';
+import { MainLayout } from './styles/Layouts';
 
 function App() {
+  const AppStyled = styled.div`
+    height: 100vh;
+  `
   return (
-    <div className="App">
-    </div>
+    <AppStyled className="App">
+      <MainLayout/>
+    </AppStyled>
   );
 }
+
 
 export default App;
