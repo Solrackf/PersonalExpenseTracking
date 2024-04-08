@@ -6,7 +6,11 @@ import Form from '../Form/Form'
 
 function Income() {
 
-  const {addIncome} = useGlobalContext()
+  const {addIncome, income, getIncomes} = useGlobalContext()
+
+  useEffect(() => {
+    getIncomes()
+  }, [])
 
   return (
     <IncomeStyled>
@@ -17,7 +21,10 @@ function Income() {
               <Form/>
           </div>
           <div className="incomes">
-            
+            {IncomeStyled.map((income) => {
+              const {_id, title,amount,date, category, description} = income
+              return 
+            })}
           </div>
         </div>
       </InnerLayout>
