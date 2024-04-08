@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 
 export const MainLayout = styled.div`
-  padding: 2rem;
+  padding: 0rem;
   height: 100%;
   display: flex;
-  gap: 2rem;
 `
 
 export const InnerLayout = styled.div`
-  padding: 2rem 1.5rem;
+  padding: 0;
   width: 100%;
 `

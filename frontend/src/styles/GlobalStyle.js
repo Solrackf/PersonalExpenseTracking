@@ -7,6 +7,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing:border-box;
     list-style-type: none;
     list-style: none;
+    line-height: 1;
+  }
+  ::before{
+    margin: 0;
+    padding: 0;
   }
   :root{
     --primary-color: #17161E;
@@ -16,14 +21,14 @@ export const GlobalStyle = createGlobalStyle`
     --color-green: #68EE76;
     --color-green-light: #99FFA3;
     --color-blue: #151353;
-    --color-blue-light: #20208F;
+    --color-blue-light: #4CB1EB;
     --color-white: #F9F6FF;
     --color-white-dark: #F4F0FF;
   }
   body{
     font-family: "Poppins", sans-serif;
     background: var(--primary-color);
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-size: clamp(1rem, 1vw, 1.2rem);
     overflow: hidden;
     color: var(--color-white);
   }
