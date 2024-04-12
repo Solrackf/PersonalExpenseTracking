@@ -8,13 +8,7 @@ function Navigation({active,setActive}) {
   
   return (
     <NavStyled>
-      <div className='user-con'>
-        <img src={avatar} alt="" style={{width:"3rem", height: "3rem", borderRadius: "100%"}}/>
-        <div>
-          <h2>Jane Doe</h2>
-          <p>Your Money</p>
-        </div>
-      </div>
+      <h1 className='NavigationName text__900'>COINKEEPER</h1>
       <ul className='menu-items'>
         {menuItems.map((item)=>{
           return (
@@ -42,9 +36,8 @@ const NavStyled = styled.nav`
   display:flex ;
   flex-direction: column;
   justify-content: space-between;
-  .user-con{
-    display: flex;
-    align-items: flex-start;
+  .NavigationName{
+    font-size: 2rem;
     flex-grow: 1;
   }
   .menu-items{

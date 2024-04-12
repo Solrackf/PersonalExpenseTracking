@@ -36,5 +36,32 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Poppins", sans-serif;
     font-style: italic;
   }
+  .text__100{
+    font-weight: 100;
+  }
+  .text__200{
+    font-weight: 200;
+  }
+  .text__300{
+    font-weight: 300;
+  }
+  .text__900{
+    font-weight: 900;
+  }
+  .text__400{
+    font-weight: 400;
+  }
+  .text__500{
+    font-weight: 500;
+  }
+  .text__600{
+    font-weight: 600;
+  }
+  .text__700{
+    font-weight: 700;
+  }
+  .text__800{
+    font-weight: 800;
+  }
 
 `

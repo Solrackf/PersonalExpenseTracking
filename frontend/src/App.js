@@ -6,6 +6,7 @@ import Navigation from './components/Navigation/Navigation'
 import Dashboard from './components/Dashboard/Dashboard';
 import Income from './components/Income/Income';
 import Expenses from './components/Expenses/Expenses';
+import Navbar from './components/Navbar/Navbar';
 import { useGlobalContext } from './context/globalContext';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <MainLayout>
         <Navigation active={active} setActive={setActive}/>
         <main>
+          <Navbar></Navbar>
           {displayData()}
         </main>
       </MainLayout>
@@ -46,7 +48,11 @@ function App() {
     main{
       width: 75vw;
       height: 100vh;
-      padding: 5vh 5vw;
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      grid-template-rows: repeat(20, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
     }
   `
 

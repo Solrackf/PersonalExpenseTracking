@@ -94,7 +94,7 @@ const Form = () => {
 					placeholder="Añade una descripción"
 					id="description"
 					cols="30"
-					rows="4"
+					rows="6"
 					onChange={handleInput("description")}
 				></textarea>
 			</div>
@@ -113,14 +113,18 @@ const Form = () => {
 };
 
 const FormStyled = styled.form`
+  width: 100%;
+	height: 100%;
   background: var(--secondary-color);
   border-radius: 0.75rem;
   overflow: hidden;
   padding: 2rem;
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+	.react-datepicker-wrapper{
+		width: 100%;
+	}
   input, select, textarea{
     background: var(--primary-color);
     width: 100%;
@@ -131,8 +135,10 @@ const FormStyled = styled.form`
     outline: none;
     font-family: "Poppins", sans-serif;
   }
+  input:active,input:focus, select:active, select:focus, textarea:active, textarea:focus{
+		outline: 1px solid #33363F;
+  }
   input::placeholder{
-    color: var();
   }
   select:focus{
     background: var(--primary-color);
@@ -141,6 +147,10 @@ const FormStyled = styled.form`
   .submit-btn{
     button{
       border: none;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
       &:hover{
         color: var(--color-white-dark);
         background: var(--secondary-color);
