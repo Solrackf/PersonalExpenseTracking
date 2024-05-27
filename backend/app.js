@@ -15,12 +15,12 @@ app.use(cors())
 // Routes
 readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)))
 
-/*
- *Testing connection on postman 
+
+ // *Testing connection on postman 
   app.get('/', (req,res)=>{
       res.send('Hello World')
   })
-*/
+
 
 const server =()=>{
   db()

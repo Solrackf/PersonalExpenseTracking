@@ -7,7 +7,7 @@ import IncomeItem from "../IncomeItem/IncomeItem";
 import { filter } from "../../utils/Icons";
 
 function Income() {
-	const { addIncome, incomes, getIncomes, deleteIncome } = useGlobalContext();
+	const { addIncome, incomes, getIncomes, deleteIncome, totalIncome } = useGlobalContext();
 
 	useEffect(() => {
 		getIncomes();
@@ -21,10 +21,10 @@ function Income() {
 						<h3>Ingresos</h3>
 						<p className="sectionDescription">Aquí podrás ver tus ingresos, añadir ingresos y eliminarlos</p>
 					</section>
-          {/* <section className="filter__section">
+          <section className="filter__section">
             <h3>Gastos Totales:</h3> 
-						<span>${totalExpenses()}</span>
-          </section> */}
+						<span>${totalIncome()}</span>
+          </section>
 				</section>
 				<div className="income__section">
 					<div className="form-container">
@@ -89,14 +89,16 @@ const IncomeStyled = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      background: var(--color-white-dark);
-      color: var(--color-blue);
-      border: 1px solid var(--color-blue);
+      color: var(--color-white-dark);
       border-radius: 0.5rem;
       height: 100%;
-      aspect-ratio: 1 / 1;
       cursor: pointer;
+			gap: 1rem;
     }
+		.filter__section *{
+			height: fit-content;
+			font-size: 1.17em;
+		}
     .section__name{
       display: flex;
       align-items: flex-start;

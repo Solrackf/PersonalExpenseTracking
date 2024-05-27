@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 services:
   backend:
     container_name: backendapp
@@ -12,7 +12,7 @@ services:
     env_file:
       - ./backend/.env
     volumes:
-      -./backend:/usr/src/app
+      - ./backend:/usr/src/app
     command: npm start
   # database:
   #   container_name: mongodatabase

@@ -31,6 +31,9 @@ function Navigation({ active, setActive }) {
 }
 
 const NavStyled = styled.nav`
+	position: fixed;
+	top: 0;
+	left: 0;
 	padding: 2rem;
 	width: 25vw;
 	height: 100vh;

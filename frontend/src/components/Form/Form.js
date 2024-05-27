@@ -78,7 +78,7 @@ const Form = () => {
 					onChange={handleInput("category")}
 				>
 					<option value="" disabled>
-						Selecciona una opción
+						Selecciona una categoría
 					</option>
 					<option value="salary">Salario</option>
 					<option value="freelancing">Freelance</option>

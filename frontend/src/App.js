@@ -43,9 +43,16 @@ function App() {
   );
 }
   const AppStyled = styled.div`
+  ::-webkit-scrollbar{
+    display: none;
+  }
     height: 100vh;
     width: 100vw;
+    position: relative;
     main{
+      position: absolute;
+      top: 0;
+      right: 0;
       width: 75vw;
       height: 100vh;
       display: grid;

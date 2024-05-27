@@ -17,9 +17,9 @@ export const GlobalStyle = createGlobalStyle`
     --primary-color: #17161E;
     --secondary-color: #1F1E26;
     --color-red: #470808;
-    --color-red-light: #E12121;
+    --color-red-light: #FF7A65;
     --color-green: #68EE76;
-    --color-green-light: #99FFA3;
+    --color-green-light: #CCFA81;
     --color-blue: #151353;
     --color-blue-light: #4CB1EB;
     --color-white: #F9F6FF;
@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Poppins", sans-serif;
     background: var(--primary-color);
     font-size: clamp(1rem, 1vw, 1.2rem);
-    overflow: hidden;
+    overflow-x: hidden;
     color: var(--color-white);
   }
   .italic__text{
