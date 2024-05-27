@@ -35,7 +35,7 @@ function App() {
       <MainLayout>
         <Navigation active={active} setActive={setActive}/>
         <main>
-          <Navbar></Navbar>
+          {/* <Navbar></Navbar> */}
           {displayData()}
         </main>
       </MainLayout>

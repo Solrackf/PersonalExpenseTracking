@@ -6,7 +6,7 @@ function Dashboard() {
   return (
     <DashboardStyled>
       <InnerLayout>
-        <h1>Dash</h1>
+        {/* <h1>Dash</h1> */}
       </InnerLayout>
     </DashboardStyled>
   )

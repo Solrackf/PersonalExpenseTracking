@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { InnerLayout } from "../../styles/Layouts";
 import { useGlobalContext } from "../../context/globalContext";
+import { InnerLayout } from "../../styles/Layouts";
+import Form from '../Form/Form';
 import IncomeItem from "../IncomeItem/IncomeItem";
-import { filter } from "../../utils/Icons";
 import ExpenseForm from "./ExpensesForm";
+import { filter } from "../../utils/Icons";
 
 function Expenses() {
 	const { addIncome, expenses, getExpenses, deleteExpense, totalExpenses } = useGlobalContext();
@@ -12,7 +13,6 @@ function Expenses() {
 	useEffect(() => {
 		getExpenses();
 	}, []);
-
 	return (
 		<IncomeStyled>
 			<InnerLayout>
@@ -22,7 +22,8 @@ function Expenses() {
 						<p className="sectionDescription">Aquí podrás ver tus gastos, añadir ingresos y eliminarlos</p>
 					</section>
           <section className="filter__section">
-            {filter}
+            <h3>Gastos Totales:</h3> 
+						<span>${totalExpenses()}</span>
           </section>
 				</section>
 				<div className="income__section">
@@ -33,6 +34,7 @@ function Expenses() {
 						{expenses.map((income) => {
 							const { _id, title, amount, date, category, description, type } =
 								income;
+							console.log(income);
 							return (
 								<IncomeItem
 									key={_id}
@@ -43,7 +45,7 @@ function Expenses() {
 									date={date}
 									type={type}
 									category={category}
-									indicatorColor="var(--color-green)"
+									indicatorColor="#FF0000"
                   deleteItem={deleteExpense}
 								/>
 							);
@@ -88,14 +90,16 @@ const IncomeStyled = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      background: var(--color-white-dark);
-      color: var(--color-blue);
-      border: 1px solid var(--color-blue);
+      color: var(--color-white-dark);
       border-radius: 0.5rem;
       height: 100%;
-      aspect-ratio: 1 / 1;
       cursor: pointer;
+			gap: 1rem;
     }
+		.filter__section *{
+			height: fit-content;
+			font-size: 1.17em;
+		}
     .section__name{
       display: flex;
       align-items: flex-start;

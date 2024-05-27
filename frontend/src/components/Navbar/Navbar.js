@@ -15,8 +15,8 @@ function Navbar() {
         </section>
       </section>
       <section className='userInfoSection'>
-        <p><span className='italic__text text__300'>Hola, </span><span className='text__600'>Jane Doe</span></p>
-        <img src={avatar} alt="" className='avatarUser'/>
+        <p><span className='italic__text text__300'>Hola </span><span className='text__600'></span></p>
+        {/* <img src={avatar} alt="" className='avatarUser'/> */}
       </section>
     </NavbarStyled>
   )

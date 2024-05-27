@@ -21,9 +21,10 @@ function Income() {
 						<h3>Ingresos</h3>
 						<p className="sectionDescription">Aquí podrás ver tus ingresos, añadir ingresos y eliminarlos</p>
 					</section>
-          <section className="filter__section">
-            {filter}
-          </section>
+          {/* <section className="filter__section">
+            <h3>Gastos Totales:</h3> 
+						<span>${totalExpenses()}</span>
+          </section> */}
 				</section>
 				<div className="income__section">
 					<div className="form-container">

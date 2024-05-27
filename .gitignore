@@ -1,7 +1,7 @@
 /client
 
 /backend/node_modules
-/backend/.env
+# /backend/.env
 /backend/build
 
 /frontend/node_modules

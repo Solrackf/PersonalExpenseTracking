@@ -85,7 +85,7 @@ function ExpenseForm() {
             </div>
             <div className="submit-btn">
                 <Button 
-                    name={'Añadie Gasto'}
+                    name={'Añadir Gasto'}
                     icon={plus}
                     bPad={'.75rem 1.25rem'}
                     bRad={'0.5rem'}

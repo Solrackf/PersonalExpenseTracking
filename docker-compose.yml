@@ -1,0 +1,29 @@
+version: "3"
+services:
+  backend:
+    container_name: backendapp
+    restart: always
+    build:
+      context: ./backend
+    image: solrackf/personalexpensetrackingbackend:latest
+    ports:
+      - "5000:5000"
+      # - "database"
+    env_file:
+      - ./backend/.env
+    volumes:
+      -./backend:/usr/src/app
+    command: npm start
+  # database:
+  #   container_name: mongodatabase
+  #   image: mongo
+  #   ports:
+  #     - "27017:27017"
+  frontend:
+    build:
+      context: ./frontend
+    image: solrackf/personalexpensetrackingfrontend:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
